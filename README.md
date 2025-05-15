@@ -1,7 +1,6 @@
 # python-git-github-course-practice
 this is about practice and learning beginer to advance python programming and git and gihub lernning...
 
-# git commands :
 
 <h1>Git & GitHub Cheat Sheet</h1>
 
