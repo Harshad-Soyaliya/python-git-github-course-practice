@@ -3,66 +3,6 @@ this is about practice and learning beginer to advance python programming and gi
 
 # git commands :
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Git Commands Guide</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f4f6;
-      margin: 0;
-      padding: 20px;
-      color: #1f2937;
-    }
-
-    h1, h2 {
-      color: #0f766e;
-    }
-
-    .section {
-      background: #ffffff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-left: 5px solid #0f766e;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    .command {
-      background: #f9fafb;
-      border: 1px solid #d1d5db;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      position: relative;
-    }
-
-    .copy-btn {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      padding: 5px 10px;
-      font-size: 12px;
-      background-color: #0f766e;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    .copy-btn:hover {
-      background-color: #0d6a60;
-    }
-
-    pre {
-      margin: 0;
-      font-family: 'Courier New', monospace;
-    }
-  </style>
-</head>
-<body>
 
   <h1>Git Commands Guide</h1>
 
@@ -70,15 +10,12 @@ this is about practice and learning beginer to advance python programming and gi
     <h2>Configuring Git</h2>
     <div class="command">
       <pre>git config --global user.name "my name"</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
     </div>
     <div class="command">
       <pre>git config --global user.email "someone@email.com"</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
     </div>
     <div class="command">
       <pre>git config --list</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
     </div>
   </div>
 
@@ -87,12 +24,12 @@ this is about practice and learning beginer to advance python programming and gi
     <p><strong>Clone:</strong> Clone a repository to your local machine.</p>
     <div class="command">
       <pre>git clone https://github.com/your/repo.git</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+      
     </div>
     <p><strong>Status:</strong> Show the working tree status.</p>
     <div class="command">
       <pre>git status</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+     
     </div>
   </div>
 
@@ -101,16 +38,16 @@ this is about practice and learning beginer to advance python programming and gi
     <p><strong>Add:</strong> Add files to staging area.</p>
     <div class="command">
       <pre>git add filename</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    
     </div>
     <div class="command">
       <pre>git add .</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+      
     </div>
     <p><strong>Commit:</strong> Record changes to the repository.</p>
     <div class="command">
       <pre>git commit -m "some msg"</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+   
     </div>
   </div>
 
@@ -119,7 +56,7 @@ this is about practice and learning beginer to advance python programming and gi
     <p>Push local repository changes to remote.</p>
     <div class="command">
       <pre>git push origin main</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+
     </div>
   </div>
 
@@ -127,27 +64,27 @@ this is about practice and learning beginer to advance python programming and gi
     <h2>Init Command</h2>
     <div class="command">
       <pre>git init</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    
     </div>
     <div class="command">
       <pre>git remote add origin https://github.com/your/repo.git</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+     
     </div>
     <div class="command">
       <pre>git remote -v</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    
     </div>
     <div class="command">
       <pre>git branch</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+     
     </div>
     <div class="command">
       <pre>git branch -M main</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+    
     </div>
     <div class="command">
       <pre>git push -u origin main</pre>
-      <button class="copy-btn" onclick="copyText(this)">Copy</button>
+     
     </div>
   </div>
 
@@ -252,17 +189,5 @@ this is about practice and learning beginer to advance python programming and gi
     <p>A fork is a new repository that shares code and visibility settings with the original "upstream" repository.</p>
   </div>
 
-  <script>
-    function copyText(btn) {
-      const text = btn.previousElementSibling.innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        btn.innerText = "Copied!";
-        setTimeout(() => {
-          btn.innerText = "Copy";
-        }, 1500);
-      });
-    }
-  </script>
 
-</body>
-</html>
+
