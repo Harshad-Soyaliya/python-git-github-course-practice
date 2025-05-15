@@ -1,10 +1,8 @@
 
 configuring git :
 -----------------
------------------
 
 connect git to the my github account :
-
 
 username :- git config --global user.name "my name"
 
@@ -12,21 +10,16 @@ email :- git config --global user.email "someone@email.com"
 
 show config deatils :- git config --list
 
-====================================================
+================================================================================================
 
 clone & status :
 ----------------
-----------------
 
 clone :- cloning a respository on our local machine 
------
 
 command :- git clone httpslink(coppy from github)
 
---------------------------------------------------
-
 status :- displays the state of the code
-------
 
 -> untracked :- new files that git dosen't yet track
 -> modified :- changed
@@ -35,42 +28,35 @@ status :- displays the state of the code
 
 command :- git status
 
-=====================================================
+================================================================================================
 
-Add & Commit 
-------------
-------------
+Add & Commit :
+--------------
 
 add :- adds new or changed files in your working directory to the git staging area
----
 
 command :
 for single file :- git add filename
 for multiple file :- git add .
-
----------------------------------------------------
 
 commit :- it is the record of changed or store/save code in local machine
 ------
 
 command :- git commit -m "some msg"
 
-===================================================
+================================================================================================
 
-push command
-------------
-------------
+push command :
+--------------
 
 push :- upload local(local machine) repo content to remote(github) repo
-----
 
 command :- git push origin main
 
-===================================================
+================================================================================================
 
-init command 
-------------
-------------
+init command :
+--------------
 
 init :- used to create a new git repo
 
@@ -88,15 +74,17 @@ git branch -M main (to remote branch)
 
 git push origin main or git push -u origin main (when this command run that time no need to write origin main only run :- git push)
 
-====================================================
+================================================================================================
 
 Workflow :
+----------
 
 github repo create -> clone -> chages -> add -> commit -> push
 
-===================================================
+================================================================================================
 
-Branch commands 
+Branch commands :
+-----------------
 
 git branch (to check branch)
 
@@ -108,9 +96,10 @@ git checkout -b <-new branch name-> (to create new branch)
 
 git branch -d <- branch name-> (to delete branch)
 
-======================================================
+================================================================================================
 
-merging code 
+merging code :
+--------------
 
 way 1 :
 
@@ -122,29 +111,33 @@ way 2 :
 
 create PR (pull request)
 
-====================================================
+================================================================================================
 
-Pull request
+Pull request :
+--------------
 
 it lets you tell others about changes you've pushed to a branch in a repository on github
 
-===================================================
+================================================================================================
 
-pull command 
+pull command :
+--------------
 
 git pull origin main
 
 used to fetch and dowanload content from a remote repo and immediately update the local repo to match that content
 
-====================================================
+================================================================================================
 
-resolving merge conflicts 
+resolving merge conflicts :
+---------------------------
 
 an event takes place hen git is unable to automatically resolve difference in code between two commits
 
-========================================================
+================================================================================================
 
-undoing changes
+undoing changes :
+-----------------
 
 Case 1 : staged changes
 
@@ -162,13 +155,17 @@ git reset <- commit hash ->
 
 git reset -- hard <- commit hash ->
 
-========
+================================================================================================
 
 git log :- show all changes(hased)
 
-================
+================================================================================================
 
-fork 
+fork :
+------
 
 A fork is a new repository that shares code and visibility settings with orignal "upstram" repository
 fork is a rough coppy
+
+================================================================================================
+================================================================================================
